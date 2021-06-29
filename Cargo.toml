@@ -9,5 +9,9 @@ edition = "2018"
 name = "fl_text_display"
 path = "src/fl_text_display.rs"
 
+[[bin]]
+name = "fl_text_display_colors"
+path = "src/fl_text_display_colors.rs"
+
 [dependencies]
 fltk = "1.0.20"
