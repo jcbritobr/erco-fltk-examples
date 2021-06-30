@@ -15,3 +15,11 @@ $ cargo run --bin fl_text_display_colors
 ```
 
 ![](thumbs/fl_text_display_color.png)
+
+* Simple popup menu
+
+```
+$ cargo run --bin fl_right_click_context_menu
+```
+
+![](thumbs/fl_right_click_context_menu.png)
