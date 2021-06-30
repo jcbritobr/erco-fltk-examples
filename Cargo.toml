@@ -13,5 +13,9 @@ path = "src/fl_text_display.rs"
 name = "fl_text_display_colors"
 path = "src/fl_text_display_colors.rs"
 
+[[bin]]
+name = "fl_right_click_context_menu"
+path = "src/fl_right_click_context_menu.rs"
+
 [dependencies]
 fltk = "1.0.20"
