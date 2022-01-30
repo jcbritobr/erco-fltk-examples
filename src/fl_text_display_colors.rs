@@ -1,5 +1,5 @@
 use fltk::{
-    app::{App, Scheme},
+    app::App,
     enums::{Color, Font},
     prelude::{DisplayExt, GroupExt, WidgetBase, WidgetExt},
     text::{StyleTableEntry, TextBuffer, TextDisplay},
@@ -11,7 +11,7 @@ const WIDGET_WIDTH: i32 = 640;
 const WIDGET_HEIGHT: i32 = 480;
 
 fn main() {
-    let app = App::default().with_scheme(Scheme::Gtk);
+    let app = App::default();
     let mut win = Window::default().with_size(WIDGET_WIDTH, WIDGET_HEIGHT);
 
     let mut style_entry_buffer = Vec::<StyleTableEntry>::new();
@@ -58,7 +58,7 @@ fn main() {
     disp.set_highlight_data(Some(style_buffer), style_entry_buffer);
     win.resizable(&disp);
     win.end();
-    win.show();
+    win.show_with_env_args();
 
     app.run().unwrap();
 }

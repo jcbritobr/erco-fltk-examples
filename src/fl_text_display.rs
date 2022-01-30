@@ -1,5 +1,5 @@
 use fltk::{
-    app::{App, Scheme},
+    app::App,
     prelude::{DisplayExt, GroupExt, WidgetBase, WidgetExt},
     text::{TextBuffer, TextDisplay},
     window::Window,
@@ -10,7 +10,7 @@ const WIDGET_WIDTH: i32 = 640;
 const WIDGET_HEIGHT: i32 = 480;
 
 fn main() {
-    let app = App::default().with_scheme(Scheme::Gtk);
+    let app = App::default();
     let mut win = Window::default().with_size(WIDGET_WIDTH, WIDGET_HEIGHT);
 
     let mut text_buffer = TextBuffer::default();
@@ -33,7 +33,7 @@ fn main() {
     );
     disp.set_buffer(text_buffer);
     win.resizable(&disp);
-    win.show();
+    win.show_with_env_args();
 
     app.run().unwrap();
 }
