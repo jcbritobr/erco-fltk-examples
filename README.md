@@ -23,3 +23,10 @@ $ cargo run --bin fl_right_click_context_menu
 ```
 
 ![](thumbs/fl_right_click_context_menu.png)
+
+* Load Jpeg Image
+```
+$ cargo run --bin fl_jpeg_image
+```
+
+![](thumbs/fl_jpeg_image.png)

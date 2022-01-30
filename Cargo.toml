@@ -17,5 +17,9 @@ path = "src/fl_text_display_colors.rs"
 name = "fl_right_click_context_menu"
 path = "src/fl_right_click_context_menu.rs"
 
+[[bin]]
+name = "fl_jpeg_image"
+path = "src/fl_jpeg_image.rs"
+
 [dependencies]
 fltk = { version = "1.2.28", features = ["fltk-bundled"] }
