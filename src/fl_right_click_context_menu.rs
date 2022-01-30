@@ -22,13 +22,17 @@ enum Message {
 impl MyApp {
     fn new(sender: Sender<Message>) -> Self {
         let mut window = Window::default()
-            .with_size(580, 460)
+            .with_size(400, 300)
             .with_label("Simple popup menu");
         window.set_trigger(CallbackTrigger::Release);
 
         window.set_tooltip("Use right click for popup menu ...");
+        let mut input = MultilineInput::default()
+            .with_pos(70, 120)
+            .with_size(270, 50);
+        input.set_value("Right-click anywhere on gray window area\nfor popup menu");
+
         window.handle(move |_, event| {
-            //let event_pos = (event_x(), event_y());
             match event {
                 Event::Released if event_button() == 3 => {
                     let menu = MenuItem::new(&["Do thing#1", "Do thing#2", "Quit"]);
@@ -52,14 +56,8 @@ impl MyApp {
             }
         });
 
-        let mut input = MultilineInput::default()
-            .with_pos(100, 200)
-            .with_size(350, 50)
-            .with_label("Input");
-        input.set_value("Right-click anywhere on gray window area\nfor popup menu");
-
         window.end();
-        window.show();
+        window.show_with_env_args();
 
         let app = MyApp {
             _window: window,
@@ -83,7 +81,7 @@ fn main() {
                 println!("You choose to do a different thing");
             }
             Some(Message::ClickQuit) => {
-                std::process::exit(0);
+                break;
             }
             None => {}
         }
