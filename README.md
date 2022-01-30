@@ -30,3 +30,27 @@ $ cargo run --bin fl_jpeg_image
 ```
 
 ![](thumbs/fl_jpeg_image.png)
+
+* Walk pixels of Jpeg Image
+```
+$ cargo run --bin fl_raw_image
+...
+pixel index:479970, color-> r:175, r:202, b:171
+pixel index:479973, color-> r:175, r:202, b:171
+pixel index:479976, color-> r:176, r:203, b:172
+pixel index:479979, color-> r:176, r:203, b:172
+pixel index:479982, color-> r:176, r:203, b:172
+pixel index:479985, color-> r:173, r:202, b:172
+pixel index:479988, color-> r:172, r:203, b:172
+pixel index:479991, color-> r:171, r:201, b:173
+pixel index:479994, color-> r:172, r:203, b:172
+pixel index:479997, color-> r:172, r:203, b:172
+$
+```
+
+* Change Menu Item
+```
+$ cargo run --bin fl_change_menu_item
+```
+
+![](thumbs/fl_change_menu_item.png)
