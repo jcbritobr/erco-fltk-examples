@@ -53,7 +53,7 @@ fn main() {
         WIDGET_HEIGHT - 40,
         "Display",
     );
-    
+
     disp.set_buffer(text_buffer); // needs be called afert set_highlight_data
     disp.set_highlight_data(Some(style_buffer), style_entry_buffer);
     win.resizable(&disp);

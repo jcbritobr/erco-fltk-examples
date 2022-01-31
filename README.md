@@ -55,3 +55,10 @@ $ cargo run --bin fl_change_menu_item
 ```
 
 ![](thumbs/fl_change_menu_item.png)
+
+* **Chart**
+```
+$ cargo run --bin fl_chart
+```
+
+![](thumbs/fl_chart.png)
