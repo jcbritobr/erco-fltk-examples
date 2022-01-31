@@ -1,23 +1,23 @@
 ![](thumbs/fltk-icon.gif)
 # Erco's fltk Cheat Page ported for Rust Language
 
-* TextDisplay
+* **TextDisplay**
 
 ```
 $ cargo run --bin fl_text_display
 ```
 
-![](thumbs/fl_text_display.png)
+<img src="thumbs/fl_text_display.png" width="500"/>
 
-* TextDisplay Colors
+* **TextDisplay Colors**
 
 ```
 $ cargo run --bin fl_text_display_colors
 ```
 
-![](thumbs/fl_text_display_color.png)
+<img src="thumbs/fl_text_display_color.png" width="500"/>
 
-* Simple popup menu
+* **Simple popup menu**
 
 ```
 $ cargo run --bin fl_right_click_context_menu
@@ -25,14 +25,14 @@ $ cargo run --bin fl_right_click_context_menu
 
 ![](thumbs/fl_right_click_context_menu.png)
 
-* Load Jpeg Image
+* **Load Jpeg Image**
 ```
 $ cargo run --bin fl_jpeg_image
 ```
 
-![](thumbs/fl_jpeg_image.png)
+<img src="thumbs/fl_jpeg_image.png" width=500/>
 
-* Walk pixels of Jpeg Image
+* **Walk pixels of Jpeg Image**
 ```
 $ cargo run --bin fl_raw_image
 ...
@@ -49,7 +49,7 @@ pixel index:479997, color-> r:172, r:203, b:172
 $
 ```
 
-* Change Menu Item
+* **Change Menu Item**
 ```
 $ cargo run --bin fl_change_menu_item
 ```
