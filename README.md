@@ -1,3 +1,4 @@
+![](thumbs/fltk-icon.gif)
 # Erco's fltk Cheat Page ported for Rust Language
 
 * TextDisplay
