@@ -62,3 +62,10 @@ $ cargo run --bin fl_chart
 ```
 
 ![](thumbs/fl_chart.png)
+
+* **Toggling Menu Item at Runtime**
+```
+$ cargo run --bin fl_toggling_menu
+```
+
+![](thumbs/fl_toggling_menu.png)
