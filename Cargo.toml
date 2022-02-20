@@ -37,5 +37,9 @@ path = "src/fl_chart.rs"
 name = "fl_toggling_menu"
 path = "src/fl_toggling_menu.rs"
 
+[[bin]]
+name = "fl_file_browser"
+path = "src/fl_file_browser.rs"
+
 [dependencies]
-fltk = { version = "1.2.28", features = ["fltk-bundled"] }
+fltk = { version = "1.2.31", features = ["fltk-bundled"] }

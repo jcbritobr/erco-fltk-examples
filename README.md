@@ -69,3 +69,10 @@ $ cargo run --bin fl_toggling_menu
 ```
 
 ![](thumbs/fl_toggling_menu.png)
+
+* **File Browser**
+```
+$ cargo run --bin fl_file_browser
+```
+
+![](thumbs/fl_file_browser.png)
