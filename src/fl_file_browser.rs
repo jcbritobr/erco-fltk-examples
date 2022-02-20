@@ -1,4 +1,9 @@
-use fltk::{app::App, browser::{FileBrowser, BrowserType}, prelude::{WidgetExt, BrowserExt, GroupExt}, window::Window};
+use fltk::{
+    app::App,
+    browser::{BrowserType, FileBrowser},
+    prelude::{BrowserExt, GroupExt, WidgetExt},
+    window::Window,
+};
 
 fn main() {
     let app = App::default();
@@ -9,7 +14,7 @@ fn main() {
     let mut browser = FileBrowser::default()
         .with_size(280, 380)
         .center_of_parent();
-    
+
     browser.load(".").unwrap();
     browser.set_type(BrowserType::Hold);
     win.end();

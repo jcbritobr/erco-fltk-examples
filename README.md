@@ -76,3 +76,10 @@ $ cargo run --bin fl_file_browser
 ```
 
 ![](thumbs/fl_file_browser.png)
+
+* **Browser Column**
+```
+$ cargo run --bin fl_browser_column
+```
+
+<img src="thumbs/fl_browser_column.png" width=500/>
