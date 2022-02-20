@@ -1,5 +1,5 @@
 ![](thumbs/fltk-icon.gif)
-# Erco's fltk Cheat Page ported for Rust Language
+# Erco's fltk Cheat Page examples ported for Rust Language
 
 * **TextDisplay**
 
@@ -83,3 +83,10 @@ $ cargo run --bin fl_browser_column
 ```
 
 <img src="thumbs/fl_browser_column.png" width=500/>
+
+
+# References
+
+[Ercos Fltk Cheat Page](http://seriss.com/people/erco/fltk/)
+
+[Fltk Library](https://www.fltk.org/)
