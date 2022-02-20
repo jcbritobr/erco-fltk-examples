@@ -1,6 +1,6 @@
 [package]
 name = "erco-fltk-examples"
-version = "0.2.0"
+version = "0.3.0"
 edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
@@ -40,6 +40,10 @@ path = "src/fl_toggling_menu.rs"
 [[bin]]
 name = "fl_file_browser"
 path = "src/fl_file_browser.rs"
+
+[[bin]]
+name = "fl_browser_column"
+path = "src/fl_browser_column.rs"
 
 [dependencies]
 fltk = { version = "1.2.31", features = ["fltk-bundled"] }
